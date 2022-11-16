@@ -52,7 +52,7 @@
           </tatami>
         </v-card-text>
       </card>
-      <kikaku />
+      <contents />
     </v-col>
   </v-row>
 </template>
@@ -60,12 +60,12 @@
 <script>
 import Card from '~/components/Card.vue'
 import Carousel from '~/components/Top/Carousel.vue'
+import Contents from '@/components/Top/Contents/index.vue'
 import ExternalButton from '@/components/Button/External.vue'
-import Kikaku from '@/components/Top/Kikaku/index.vue'
 import Tatami from '@/components/Tatami.vue'
 
 export default {
   name: 'IndexPage',
-  components: { Card, Carousel, ExternalButton, Kikaku, Tatami },
+  components: { Card, Carousel, Contents, ExternalButton, Tatami },
 }
 </script>
