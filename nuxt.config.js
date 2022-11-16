@@ -1,5 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
-import { shortName, title, description, url } from '~/assets/baseInfo'
+import { shortName, title, description, url } from './assets/baseInfo'
 
 export default {
   target: 'static',

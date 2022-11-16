@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { title } from '~/assets/baseInfo'
+import { title } from '~/assets/baseInfo.js'
 
 export default {
   name: 'DefaultLayout',
