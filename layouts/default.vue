@@ -19,11 +19,13 @@
 </template>
 
 <script>
+import { title } from '~/assets/baseInfo'
+
 export default {
   name: 'DefaultLayout',
   data() {
     return {
-      title: 'ut.code(); 第73回駒場祭企画',
+      title,
     }
   },
 }
