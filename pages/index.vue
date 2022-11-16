@@ -109,6 +109,32 @@
           <external-button url="https://qr.paypay.ne.jp/p2p01_Cjljj2sgGMxCFc7n">
             PayPay
           </external-button>
+          <p>PCからご覧の方は以下の二次元コードを読み取ってください。</p>
+          <p class="primary--text">画像準備中</p>
+          <v-img src="" />
+        </v-card-text>
+      </card>
+      <card>
+        <v-card-title id="contact" class="headline">
+          お問い合わせ
+        </v-card-title>
+        <v-card-text>
+          <p>
+            問い合わせは festival〜utcode.net
+            にメールをいただくか、以下のSNSからお願いいたします。<br />
+            spam対策で@を〜に変更しています。
+          </p>
+          <p>
+            なお ut.code();
+            では、プログラミングを始めてみたい、新しいスキルを身につけたいという学生を常時募集しています！<br />
+            ご興味をお持ちの方は、ぜひご連絡ください！
+          </p>
+          <external-button url="https://twitter.com/utokyo_code">
+            公式Twitter
+          </external-button>
+          <external-button url="https://line.me/ti/p/%40nlr3843e">
+            公式LINE
+          </external-button>
         </v-card-text>
       </card>
     </v-col>
