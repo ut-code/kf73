@@ -19,6 +19,22 @@
             この企画を通して、ちょっと詳しく、もっと好きになってくだされば幸いです。
           </p>
         </v-card-text>
+        <v-card-title> 開催期間 </v-card-title>
+        <v-card-text>
+          <p>「あなたのためのプログラミング」は以下の日程で開催します。</p>
+          <ul class="mb-4">
+            <li>2022年11月18日 9:00〜18:00</li>
+            <li>2022年11月19日 9:00〜18:00</li>
+            <li>2022年11月20日 9:00〜15:00</li>
+          </ul>
+          <p>
+            現在、
+            <span class="primary--text">
+              {{ beingHeld ? '開催期間中' : '開催期間外' }}
+            </span>
+            です。
+          </p>
+        </v-card-text>
         <v-card-title> ut.code(); とは </v-card-title>
         <v-card-text>
           <tatami>
@@ -52,7 +68,7 @@
           </tatami>
         </v-card-text>
       </card>
-      <kikaku />
+      <contents />
     </v-col>
   </v-row>
 </template>
@@ -60,12 +76,16 @@
 <script>
 import Card from '~/components/Card.vue'
 import Carousel from '~/components/Top/Carousel.vue'
+import Contents from '@/components/Top/Contents/index.vue'
 import ExternalButton from '@/components/Button/External.vue'
-import Kikaku from '@/components/Top/Kikaku/index.vue'
 import Tatami from '@/components/Tatami.vue'
+import { beingHeld } from '~/assets/time'
 
 export default {
   name: 'IndexPage',
-  components: { Card, Carousel, ExternalButton, Kikaku, Tatami },
+  components: { Card, Carousel, Contents, ExternalButton, Tatami },
+  data: () => ({
+    beingHeld,
+  }),
 }
 </script>
