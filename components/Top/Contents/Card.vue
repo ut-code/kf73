@@ -18,7 +18,7 @@
         </template>
       </template>
       <template v-else>
-        <p class="primary--text">現在準備中です。</p>
+        <p><span class="primary--text">現在準備中</span></p>
       </template>
     </v-card-text>
   </card>

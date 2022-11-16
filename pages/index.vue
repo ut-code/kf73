@@ -69,6 +69,48 @@
         </v-card-text>
       </card>
       <contents />
+      <card>
+        <v-card-title id="prix" class="headline">
+          駒場グランプリ 投票のお願い
+          <v-spacer />
+          <v-icon>mdi-vote</v-icon>
+        </v-card-title>
+        <v-card-text>
+          <p>
+            ご来場の皆さまの投票によって、受賞企画が決定する駒場グランプリにて、グランプリ受賞を目指しています。<br />
+            お手数ですが、以下からご投票いただければ幸いです。
+          </p>
+          <p>よろしくお願いいたします。</p>
+          <external-button url="https://visitor.komabasai.net/73/visitor/prix">
+            駒場グランプリ
+          </external-button>
+        </v-card-text>
+      </card>
+      <card>
+        <v-card-title id="kampa" class="headline">
+          カンパのお願い
+          <v-spacer />
+          <v-icon>mdi-cash</v-icon>
+        </v-card-title>
+        <v-card-text>
+          <p>
+            第73回駒場祭企画では、お貸しする用のPCのレンタル費・ポスターの印刷費など、費用がかかっております。<br />
+            カンパと言う形で、ご参加いただいた皆さまから少しでも支援いただければ幸いです。
+          </p>
+          <p>よろしくお願いいたします。</p>
+          <ul>
+            <li>カンパするか否かと金額については任意です。</li>
+            <li>
+              カンパで集めた金銭は ut.code();
+              が駒場祭をする上でかかった必要経費の補填に充てさせていただきます。<br />
+              もし必要経費を超えた場合、来年以降の学園祭における活動資金とさせていただきます。
+            </li>
+          </ul>
+          <external-button url="https://qr.paypay.ne.jp/p2p01_Cjljj2sgGMxCFc7n">
+            PayPay
+          </external-button>
+        </v-card-text>
+      </card>
     </v-col>
   </v-row>
 </template>
