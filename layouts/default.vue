@@ -3,8 +3,11 @@
     <v-app-bar fixed app>
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn icon>
-        <v-icon>mdi-menu</v-icon>
+      <v-btn icon href="#prix">
+        <v-icon>mdi-vote</v-icon>
+      </v-btn>
+      <v-btn icon href="#kampa">
+        <v-icon>mdi-cash</v-icon>
       </v-btn>
     </v-app-bar>
     <v-main>
