@@ -1,18 +1,35 @@
 import colors from 'vuetify/es5/util/colors'
+import { shortName, title, description, url } from '~/assets/baseInfo'
 
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - kf73',
-    title: 'kf73',
+    title,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: description },
       { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:site_name', property: 'og:site_name', content: title },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: url,
+      },
+      { hid: 'og:title', property: 'og:title', content: title },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: description,
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: `${url}/ogp.png`,
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@utokyo_code' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -54,6 +71,11 @@ export default {
   pwa: {
     manifest: {
       lang: 'ja',
+      name: title,
+      short_name: shortName,
+      description,
+      theme_color: colors.orange.darken4,
+      background_color: '#fff',
     },
   },
 
