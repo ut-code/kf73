@@ -1,87 +1,71 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
+    <v-col cols="16" sm="10" md="8">
+      <card>
+        <v-card-title class="headline primary--text">
+          あなたのためのプログラミング
         </v-card-title>
         <v-card-text>
+          <p>ut.code(); の第73回駒場祭企画へようこそ！</p>
           <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
+            「あなたのためのプログラミング」は、皆さま全員に向けた企画です。<br />
+            プログラマーの方も、プログラミングをやったことない方も、お楽しみいただけます。<br />
+            お子さまも、親御さんも、学生さんも、社会人の方も、お楽しみいただけます。
           </p>
+          <carousel />
           <p>
-            For more information on Vuetify, check out the
-            <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation </a
-            >.
+            小学校教育にも取り込まれ、どんどん身近になってきたプログラミング。<br />
+            「難しそう……」なんて思ったりして、自分とは縁のないもののように感じていませんか？<br />
+            この企画を通して、ちょっと詳しく、もっと好きになってくだされば幸いです。
           </p>
-          <p>
-            If you have questions, please join the official
-            <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br />
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
         </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-        </v-card-actions>
-      </v-card>
+        <v-card-title> ut.code(); とは </v-card-title>
+        <v-card-text>
+          <tatami>
+            <p>
+              ut.code();（ゆーてぃーこーど）は2019年に発足し、今年で結成4年目を迎えた、東京大学のプログラミングサークルです。<br />
+              東大に多々あるプログラミングサークルの中では「ソフトウェア開発」に重きをおく点が特徴となっています。
+              集まってわいわいと「あったら便利なもの」「自分が欲しかったもの」を開発しています。
+            </p>
+            <external-button url="https://utcode.net/">
+              公式ウェブサイト
+            </external-button>
+            <external-button url="https://twitter.com/utokyo_code">
+              公式Twitter
+            </external-button>
+          </tatami>
+        </v-card-text>
+        <v-card-title> 駒場祭とは </v-card-title>
+        <v-card-text>
+          <tatami>
+            <p>
+              東京大学の学園祭の1つであり、毎年11月の中旬〜下旬に3日間、駒場キャンパスにて開催されます。
+            </p>
+            <p>
+              今年は新型コロナウイルス感染症の影響を受けつつ、人数制限があるもののキャンパスに来場者が入れる形での開催となりました。<br />
+              ut.code();
+              のコンテンツは、オンラインでも、キャンパスでも、お楽しみいただけます。
+            </p>
+            <external-button url="https://visitor.komabasai.net/73/visitor/">
+              公式ウェブサイト
+            </external-button>
+          </tatami>
+        </v-card-text>
+      </card>
+      <kikaku />
     </v-col>
   </v-row>
 </template>
 
 <script>
+import Card from '~/components/Card.vue'
+import Carousel from '~/components/Top/Carousel.vue'
+import ExternalButton from '@/components/Button/External.vue'
+import Kikaku from '@/components/Top/Kikaku/index.vue'
+import Tatami from '@/components/Tatami.vue'
+
 export default {
   name: 'IndexPage',
+  components: { Card, Carousel, ExternalButton, Kikaku, Tatami },
 }
 </script>
