@@ -81,6 +81,7 @@
           <v-icon>mdi-vote</v-icon>
         </v-card-title>
         <v-card-text>
+          <v-img :src="require('~/assets/prix.png')" />
           <p>
             ご来場の皆さまの投票によって、受賞企画が決定する駒場グランプリにて、グランプリ受賞を目指しています。<br />
             お手数ですが、以下からご投票いただければ幸いです。
