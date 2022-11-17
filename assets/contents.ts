@@ -60,7 +60,10 @@ export const contents: Content[] = [
   {
     title: 'あなたのスマホで動く！　ウェブアプリをつくろう',
     target: '小学生〜大人',
-    messages: [''],
+    messages: [
+      'アプリ、作ってみませんか？',
+      '簡単な操作で誰でも簡単に、まずは自分だけのアプリを作ってみましょう！',
+    ],
     url: 'https://pwa-maker.onrender.com/',
   },
   {
