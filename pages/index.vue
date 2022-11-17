@@ -2,7 +2,11 @@
   <v-row justify="center" align="center">
     <v-col cols="16" sm="10" md="8">
       <card>
-        <v-card-title class="headline primary--text">
+        <v-card-title
+          class="headline primary--text"
+          style="user-select: none"
+          @click="clickCard"
+        >
           {{ shortName }}
         </v-card-title>
         <v-card-text>
@@ -165,6 +169,16 @@ export default {
     paypayUrl,
     beingHeld,
     shortName,
+    count: 0,
   }),
+  methods: {
+    clickCard() {
+      this.count++
+      if (this.count > 10) {
+        this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+        this.count = 0
+      }
+    },
+  },
 }
 </script>
