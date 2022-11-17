@@ -78,7 +78,7 @@ export default {
       name: title,
       short_name: shortName,
       description,
-      theme_color: colors.orange.darken4,
+      theme_color: '#fff',
       background_color: '#fff',
     },
   },
