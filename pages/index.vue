@@ -134,6 +134,7 @@
           <external-button url="https://line.me/ti/p/%40nlr3843e">
             公式LINE
           </external-button>
+          <zoom />
         </v-card-text>
       </card>
     </v-col>

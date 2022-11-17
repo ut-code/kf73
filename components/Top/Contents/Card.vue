@@ -10,12 +10,7 @@
         <external-button :url="content.url">
           このコンテンツで遊ぶ
         </external-button>
-        <template v-if="beingHeld">
-          <external-button :url="zoomUrl"> ZOOMで相談する </external-button>
-        </template>
-        <template v-else>
-          <p>駒場祭期間中はZOOMでの相談が可能です。</p>
-        </template>
+        <zoom />
       </template>
       <template v-else>
         <p><span class="primary--text">現在準備中</span></p>
@@ -28,19 +23,14 @@
 import Vue, { PropType } from 'vue'
 import Card from '~/components/Card.vue'
 import ExternalButton from '@/components/Button/External.vue'
-import { zoomUrl } from '~/assets/urls'
-import { beingHeld } from '~/assets/time'
+import Zoom from '~/components/Zoom.vue'
 
 export default Vue.extend({
   name: 'KikakuCardComponent',
-  components: { Card, ExternalButton },
+  components: { Card, ExternalButton, Zoom },
   props: {
     number: { type: Number, required: true },
     content: { type: Object as PropType<Content>, required: true },
   },
-  data: () => ({
-    zoomUrl,
-    beingHeld,
-  }),
 })
 </script>
