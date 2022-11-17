@@ -10,7 +10,7 @@
         <external-button :url="content.url">
           このコンテンツで遊ぶ
         </external-button>
-        <zoom />
+        <zoom v-if="!nozoom" />
       </template>
       <template v-else>
         <p><span class="primary--text">現在準備中</span></p>
@@ -31,6 +31,7 @@ export default Vue.extend({
   props: {
     number: { type: Number, required: true },
     content: { type: Object as PropType<Content>, required: true },
+    nozoom: { type: Boolean, required: false, default: false },
   },
 })
 </script>
