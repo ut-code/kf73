@@ -1,5 +1,5 @@
 <template>
-  <v-btn icon :href="url" @cliclk="clickHandler">
+  <v-btn icon :to="url" @cliclk="clickHandler">
     <v-icon>{{ iconName }}</v-icon>
   </v-btn>
 </template>
@@ -16,7 +16,7 @@ export default Vue.extend({
   methods: {
     clickHandler() {
       // @ts-ignore
-      this.$gtag('event', 'click', {
+      this.$gtag('event', 'iconButtonClicl', {
         event_category: 'link',
         event_label: 'icon',
         value: this.url,

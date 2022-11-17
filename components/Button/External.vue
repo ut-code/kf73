@@ -15,7 +15,7 @@ export default Vue.extend({
   methods: {
     clickHandler() {
       // @ts-ignore
-      this.$gtag('event', 'click', {
+      this.$gtag('event', 'externalButtonClick', {
         event_category: 'link',
         event_label: 'external',
         value: this.url,
