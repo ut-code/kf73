@@ -1,3 +1,7 @@
 .v-application .v-card__text p {
   font-size: 16px
 }
+
+.v-application .v-card__text ul li {
+  font-size: 16px
+}
