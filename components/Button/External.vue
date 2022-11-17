@@ -1,5 +1,5 @@
 <template>
-  <v-btn block :href="url" target="_blank" class="my-4">
+  <v-btn block :href="url" target="_blank" class="my-4" @click="clickHandler">
     <slot />
   </v-btn>
 </template>
