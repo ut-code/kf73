@@ -40,14 +40,13 @@ export const contents: Content[] = [
     ],
     url: 'https://reversi-6x6.herokuapp.com/',
   },
-
   {
     title: 'タイピングゲーム',
     target: 'キーボードが打てればOK',
     messages: [
       'タイピングは、プログラマーはもちろん、多くの大学生にとって必須のスキルです。',
       '友達と遊びながら鍛えたい、そう思ったメンバーがゲームを作っちゃいました！',
-      '親子・友達同士での対戦してみませんか？　東大生に挑戦していきませんか？',
+      '親子・友達同士で対戦してみませんか？　東大生に挑戦していきませんか？',
     ],
     url: 'https://typing-game.onrender.com/',
   },
