@@ -71,7 +71,7 @@
       <contents />
       <card>
         <v-card-title id="prix" class="headline">
-          駒場グランプリ 投票のお願い
+          投票のお願い
           <v-spacer />
           <v-icon>mdi-vote</v-icon>
         </v-card-title>
