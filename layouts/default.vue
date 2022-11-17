@@ -5,12 +5,8 @@
         <router-link to="/" class="top-title-link">{{ title }}</router-link>
       </v-toolbar-title>
       <v-spacer />
-      <v-btn icon href="#prix">
-        <v-icon>mdi-vote</v-icon>
-      </v-btn>
-      <v-btn icon href="#kampa">
-        <v-icon>mdi-cash</v-icon>
-      </v-btn>
+      <icon-button icon-name="mdi-vote" url="#prix" />
+      <icon-button icon-name="mdi-cash" url="#kampa" />
     </v-app-bar>
     <v-main>
       <v-container>
@@ -24,10 +20,12 @@
 </template>
 
 <script>
+import iconButton from '~/components/Button/Icon.vue'
 import { title } from '~/assets/baseInfo.js'
 
 export default {
   name: 'DefaultLayout',
+  components: { iconButton },
   data() {
     return {
       title,
