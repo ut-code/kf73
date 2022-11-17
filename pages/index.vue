@@ -81,6 +81,10 @@
           <v-icon>mdi-vote</v-icon>
         </v-card-title>
         <v-card-text>
+          <v-img
+            :src="require('~/assets/prix.png')"
+            alt="駒場グランプリ 投票のお願い"
+          />
           <p>
             ご来場の皆さまの投票によって、受賞企画が決定する駒場グランプリにて、グランプリ受賞を目指しています。<br />
             お手数ですが、以下からご投票いただければ幸いです。
@@ -114,7 +118,7 @@
           <external-button :url="paypayUrl"> PayPay </external-button>
           <p>PCからご覧の方は以下の二次元コードを読み取ってください。</p>
           <div justify="center" align="center" width="50%">
-            <v-img width="50%" src="/paypay.svg" />
+            <v-img width="50%" src="/paypay.svg" alt="PayPay二次元コード" />
           </div>
         </v-card-text>
       </card>

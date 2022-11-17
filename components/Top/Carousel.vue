@@ -8,7 +8,11 @@
   >
     <v-responsive :aspect-ratio="9 / 5">
       <v-carousel-item v-for="key in 4" :key="key">
-        <v-img :src="require(`@/assets/introImage/${key}.png`)" class="m-0" />
+        <v-img
+          :src="require(`@/assets/introImage/${key}.png`)"
+          class="m-0"
+          :alt="`紹介画像${key}`"
+        />
       </v-carousel-item>
     </v-responsive>
   </v-carousel>
