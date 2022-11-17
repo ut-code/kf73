@@ -26,7 +26,7 @@ export const contents: Content[] = [
     title: '強化学習AIと『ニュートリーコ』で対戦！',
     target: '小学生〜大人',
     messages: [
-      '強化学を使って、『ニュートリーコ』のゲームAIを作ってみました。',
+      '強化学習を使って、『ニュートリーコ』のゲームAIを作ってみました。',
       'ルールは簡単です。ぜひ挑戦してみてください！',
     ],
     url: 'https://neutreeko.herokuapp.com/',
