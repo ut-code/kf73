@@ -3,12 +3,12 @@
     <v-col cols="16" sm="10" md="8">
       <card>
         <v-card-title class="headline primary--text">
-          あなたのためのプログラミング
+          {{ shortName }}
         </v-card-title>
         <v-card-text>
           <p>ut.code(); の第73回駒場祭企画へようこそ！</p>
           <p>
-            「あなたのためのプログラミング」は、皆さま全員に向けた企画です。<br />
+            「{{ shortName }}」は、皆さま全員に向けた企画です。<br />
             プログラマーの方も、プログラミングをやったことない方も、お楽しみいただけます。<br />
             お子さまも、親御さんも、学生さんも、社会人の方も、お楽しみいただけます。
           </p>
@@ -18,10 +18,11 @@
             「難しそう……」なんて思ったりして、自分とは縁のないもののように感じていませんか？<br />
             この企画を通して、ちょっと詳しく、もっと好きになってくだされば幸いです。
           </p>
+          <share-button />
         </v-card-text>
         <v-card-title> 開催期間 </v-card-title>
         <v-card-text>
-          <p>「あなたのためのプログラミング」は以下の日程で開催します。</p>
+          <p>「{{ shortName }}」は以下の日程で開催します。</p>
           <ul class="mb-4">
             <li>2022年11月18日 9:00〜18:00</li>
             <li>2022年11月19日 9:00〜18:00</li>
@@ -137,6 +138,11 @@
           <zoom />
         </v-card-text>
       </card>
+      <card>
+        <v-card-text>
+          <share-button />
+        </v-card-text>
+      </card>
     </v-col>
   </v-row>
 </template>
@@ -146,16 +152,19 @@ import Card from '~/components/Card.vue'
 import Carousel from '~/components/Top/Carousel.vue'
 import Contents from '@/components/Top/Contents/index.vue'
 import ExternalButton from '@/components/Button/External.vue'
+import ShareButton from '@/components/Button/Share.vue'
 import Tatami from '@/components/Tatami.vue'
+import { shortName } from '~/assets/baseInfo'
 import { paypayUrl } from '~/assets/urls'
 import { beingHeld } from '~/assets/time'
 
 export default {
   name: 'IndexPage',
-  components: { Card, Carousel, Contents, ExternalButton, Tatami },
+  components: { Card, Carousel, Contents, ExternalButton, ShareButton, Tatami },
   data: () => ({
     paypayUrl,
     beingHeld,
+    shortName,
   }),
 }
 </script>
