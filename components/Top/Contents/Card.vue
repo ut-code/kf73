@@ -28,7 +28,7 @@
 import Vue, { PropType } from 'vue'
 import Card from '~/components/Card.vue'
 import ExternalButton from '@/components/Button/External.vue'
-import { zoomUrl } from '~/assets/contents'
+import { zoomUrl } from '~/assets/urls'
 import { beingHeld } from '~/assets/time'
 
 export default Vue.extend({
