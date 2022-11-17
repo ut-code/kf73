@@ -24,16 +24,16 @@ export const contents: Content[] = [
     url: '',
   },
   {
-    title: 'タイピングゲームバトル',
-    target: '小学3年生〜大人',
+    title: 'タイピングゲーム',
+    target: 'キーボードが打てればOK',
     messages: [],
-    url: '',
+    url: 'https://typing-game.onrender.com/',
   },
   {
-    title: 'ブロックを使ってプログラミング「言語」を作ってみよう',
+    title: 'pl-workshop',
     target: '中学生〜大人 プログラミング経験者',
     messages: [],
-    url: '',
+    url: 'https://pl-workshop.github.io/pl-workshop-text/',
   },
   {
     title: 'はじめてのアプリづくり！',
