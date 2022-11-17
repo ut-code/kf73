@@ -1,7 +1,9 @@
 <template>
   <v-app dark>
     <v-app-bar fixed app>
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title>
+        <router-link to="/" class="top-title-link">{{ title }}</router-link>
+      </v-toolbar-title>
       <v-spacer />
       <v-btn icon href="#prix">
         <v-icon>mdi-vote</v-icon>
@@ -33,3 +35,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.top-title-link {
+  text-decoration: none;
+  color: #000000de;
+  font-size: 20px;
+}
+</style>
