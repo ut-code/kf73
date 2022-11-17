@@ -1,6 +1,3 @@
-export const zoomUrl: string =
-  'https://u-tokyo-ac-jp.zoom.us/j/83329585774?pwd=RnB1bmwrSGNmQXRzZnJlSGVCYVJ6dz09'
-
 export const contents: Content[] = [
   {
     title: 'はじめてのプログラミング教室',

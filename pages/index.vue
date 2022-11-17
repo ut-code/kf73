@@ -106,12 +106,11 @@
               もし必要経費を超えた場合、来年以降の学園祭における活動資金とさせていただきます。
             </li>
           </ul>
-          <external-button url="https://qr.paypay.ne.jp/p2p01_Cjljj2sgGMxCFc7n">
-            PayPay
-          </external-button>
+          <external-button :url="paypayUrl"> PayPay </external-button>
           <p>PCからご覧の方は以下の二次元コードを読み取ってください。</p>
-          <p class="primary--text">画像準備中</p>
-          <v-img src="" />
+          <div justify="center" align="center" width="50%">
+            <v-img width="50%" src="/paypay.svg" />
+          </div>
         </v-card-text>
       </card>
       <card>
@@ -147,12 +146,14 @@ import Carousel from '~/components/Top/Carousel.vue'
 import Contents from '@/components/Top/Contents/index.vue'
 import ExternalButton from '@/components/Button/External.vue'
 import Tatami from '@/components/Tatami.vue'
+import { paypayUrl } from '~/assets/urls'
 import { beingHeld } from '~/assets/time'
 
 export default {
   name: 'IndexPage',
   components: { Card, Carousel, Contents, ExternalButton, Tatami },
   data: () => ({
+    paypayUrl,
     beingHeld,
   }),
 }
