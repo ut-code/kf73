@@ -1,6 +1,8 @@
+declare type Tag = 'ai' | 'block' | 'coding' | 'game'
 declare type Content = {
   title: string
   target: string
+  tags: Tag[]
   messages: string[]
   url: string
 }
