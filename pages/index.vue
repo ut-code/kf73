@@ -47,7 +47,6 @@
             東大に多々あるプログラミングサークルの中では「ソフトウェア開発」に重きをおく点が特徴となっています。
             集まってわいわいと「あったら便利なもの」「自分が欲しかったもの」を開発しています。
           </p>
-          </external-button>
           <external-button url="https://twitter.com/utokyo_code">
             公式Twitter
           </external-button>
