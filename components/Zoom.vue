@@ -44,14 +44,14 @@ import Vue from 'vue'
 import ExternalButton from '@/components/Button/External.vue'
 
 import { zoomUrl } from '~/assets/urls'
-import { beingHeld } from '~/assets/time'
+// import { beingHeld } from '~/assets/time'
 
 export default Vue.extend({
   name: 'ZoomComponent',
   components: { ExternalButton },
   data: () => ({
     zoomUrl,
-    beingHeld,
+    beingHeld: true,
     dialog: false,
   }),
 })
