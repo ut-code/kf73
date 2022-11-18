@@ -12,7 +12,11 @@
     </v-app-bar>
     <v-main>
       <v-container>
-        <Nuxt />
+        <v-row justify="center" align="center">
+          <v-col cols="16" sm="10" md="8">
+            <Nuxt />
+          </v-col>
+        </v-row>
       </v-container>
     </v-main>
     <v-footer absolute app>
