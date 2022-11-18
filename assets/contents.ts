@@ -23,7 +23,7 @@ export const contents: Content[] = [
     title: '強化学習AIと『ニュートリーコ』で対戦！',
     target: '小学生〜大人',
     messages: [
-      '強化学を使って、『ニュートリーコ』のゲームAIを作ってみました。',
+      '強化学習を使って、『ニュートリーコ』のゲームAIを作ってみました。',
       'ルールは簡単です。ぜひ挑戦してみてください！',
     ],
     url: 'https://neutreeko.herokuapp.com/',
@@ -37,14 +37,13 @@ export const contents: Content[] = [
     ],
     url: 'https://reversi-6x6.herokuapp.com/',
   },
-
   {
     title: 'タイピングゲーム',
     target: 'キーボードが打てればOK',
     messages: [
       'タイピングは、プログラマーはもちろん、多くの大学生にとって必須のスキルです。',
       '友達と遊びながら鍛えたい、そう思ったメンバーがゲームを作っちゃいました！',
-      '親子・友達同士での対戦してみませんか？　東大生に挑戦していきませんか？',
+      '親子・友達同士で対戦してみませんか？　東大生に挑戦していきませんか？',
     ],
     url: 'https://typing-game.onrender.com/',
   },
@@ -60,7 +59,10 @@ export const contents: Content[] = [
   {
     title: 'あなたのスマホで動く！　ウェブアプリをつくろう',
     target: '小学生〜大人',
-    messages: [''],
+    messages: [
+      'アプリ、作ってみませんか？',
+      '簡単な操作で誰でも簡単に、まずは自分だけのアプリを作ってみましょう！',
+    ],
     url: 'https://pwa-maker.onrender.com/',
   },
   {
