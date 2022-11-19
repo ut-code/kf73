@@ -86,8 +86,8 @@
           お手数ですが、以下からご投票いただければ幸いです。
         </p>
         <p>よろしくお願いいたします。</p>
-        <external-button url="https://visitor.komabasai.net/73/visitor/prix">
-          駒場グランプリ
+        <external-button url="https://ut-code.github.io/kf73-vote/">
+          投票用ページ
         </external-button>
       </v-card-text>
     </card>
