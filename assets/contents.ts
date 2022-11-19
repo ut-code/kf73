@@ -20,7 +20,7 @@ export const contents: Content[] = [
       '最強AIの座を手にするのは一体誰だ！？',
       'オンラインでの公開は11月19日以降を予定しています。',
     ],
-    url: '',
+    url: 'https://code-vs-code.utcode.net/',
   },
   {
     title: '強化学習AIと『ニュートリーコ』で対戦！',
